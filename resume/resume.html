@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Devamm Patel - Résumé</title>
+<meta name="author" content="Devamm Patel">
+<meta name="robots" content="noindex">
+<!--
+  One-page résumé, built to PDF by resume/build.sh (headless Chrome).
+  Edit the text below, run the script, and assets/resume.pdf is regenerated.
+  The phone number is deliberately not in this file: the script adds it only
+  to the private copy in resume/private/, which is never committed.
+-->
+<style>
+  @font-face { font-family: "CMU Serif"; font-weight: 400; font-style: normal;
+    src: url("https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/cmu-serif-500-roman.woff2") format("woff2"); }
+  @font-face { font-family: "CMU Serif"; font-weight: 400; font-style: italic;
+    src: url("https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/cmu-serif-500-italic.woff2") format("woff2"); }
+  @font-face { font-family: "CMU Serif"; font-weight: 700; font-style: normal;
+    src: url("https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/cmu-serif-700-roman.woff2") format("woff2"); }
+  @font-face { font-family: "CMU Serif"; font-weight: 700; font-style: italic;
+    src: url("https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/fonts/cmu-serif-700-italic.woff2") format("woff2"); }
+
+  @page { size: A4; margin: 0; }
+  :root { --navy: #1F3F77; --fs: 8.75pt; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { width: 210mm; padding: 6.5mm 10.5mm 0; font: 400 var(--fs)/1.17 "CMU Serif", "Latin Modern Roman", "Times New Roman", serif; color: #000; }
+  a { color: inherit; text-decoration: none; }
+  a.ln { color: var(--navy); }
+
+  h1 { font-size: 21pt; font-weight: 700; color: var(--navy); text-align: center; letter-spacing: .02em; line-height: 1.1; }
+  .contact { text-align: center; font-size: 9.1pt; margin-top: 1mm; }
+  .contact span { white-space: nowrap; }
+  .contact span + span::before { content: "|"; margin: 0 .5em; }
+  .contact .brk::before { content: none; }  /* first item on the second line: no separator */
+
+  h2 { font-size: 12.6pt; font-weight: 700; color: var(--navy); letter-spacing: .02em; border-bottom: .9pt solid var(--navy); padding-bottom: .4mm; margin: 2mm 0 1mm; line-height: 1.15; }
+  p.profile { text-align: justify; }
+
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  .row > :last-child { white-space: nowrap; flex: none; }
+  .role { font-style: italic; }
+  .entry + .entry { margin-top: .5mm; }
+  ul { list-style: none; margin: .3mm 0 0; }
+  li { position: relative; padding-left: 4.3mm; text-align: justify; margin-top: .6mm; }
+  li::before { content: "•"; position: absolute; left: 1mm; top: -.02em; }
+  .skills div { margin-top: .1mm; }
+</style>
+</head>
+<body>
+
+<h1>Devamm Patel</h1>
+<p class="contact">
+  <span>Leeds, UK</span><span id="phone" hidden></span><span><a href="mailto:devammpatelstudy@gmail.com">devammpatelstudy@gmail.com</a></span><br><span class="brk"><a href="https://www.linkedin.com/in/devamm-patel-197891265/">linkedin.com/in/devamm-patel-197891265</a></span><span><a href="https://github.com/DevammPatel">github.com/DevammPatel</a></span><span><a href="https://devammpatel.github.io/">devammpatel.github.io</a></span>
+</p>
+
+<h2>Profile</h2>
+<p class="profile">MSc Artificial Intelligence student at the University of Leeds, Microsoft Certified Fabric Data Engineer and published IEEE researcher with two data internships. Builds end-to-end data products in Python and SQL, from streaming pipelines and warehouses to machine learning models and retrieval-based AI systems, and explains results clearly to non-technical stakeholders.</p>
+
+<h2>Education</h2>
+<div class="row"><span><b>University of Leeds</b> — <i>MSc, Advanced Computer Science (Artificial Intelligence)</i></span><span>Sep 2026 – Present</span></div>
+<div class="row"><span><b>Dhirubhai Ambani University (DA-IICT)</b> — <i>B.Tech, Information &amp; Communication Technology</i></span><span>Aug 2022 – May 2026</span></div>
+<div>Relevant Coursework: Probability &amp; Statistics, Linear Algebra, Database Management Systems, Algorithms, Operating Systems, Networks</div>
+<div class="row"><span><b>Certification:</b> Microsoft Certified: Fabric Data Engineer Associate (DP-700) — Microsoft</span><span>Oct 2026</span></div>
+
+<h2>Work Experience</h2>
+<div class="entry">
+  <div class="row"><b>Sridix Technology, Data Science &amp; Analytics Services</b><span>Surat, India</span></div>
+  <div class="row role"><span>Data Scientist Intern</span><span>Jan 2026 – May 2026</span></div>
+  <ul>
+    <li>Improved predictive model accuracy by 22% over baseline by building and refining machine learning models in Python (Pandas, NumPy, Scikit-Learn), applying feature engineering, hyperparameter tuning and model validation.</li>
+    <li>Reduced missing and inconsistent entries by 18% across 50,000+ records by writing automated Python ETL checks that validate and clean each data source, improving reliability across models and reporting.</li>
+    <li>Shortened end-to-end data processing time by 20% by profiling and resolving 3 pipeline bottlenecks with a 4-member engineering team on a shared Git codebase, acting on code review and senior feedback.</li>
+    <li>Cut stakeholder reporting time by 15% by replacing manual Excel summaries with 10+ dashboards and explaining model outcomes and analytical findings clearly to non-technical team members.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="row"><b>Lambdafy Data Solutions, Logistics &amp; Operations Analytics</b><span>Ahmedabad, India</span></div>
+  <div class="row role"><span>Data Analyst Intern</span><span>May 2025 – Jul 2025</span></div>
+  <ul>
+    <li>Informed a 12% reduction in fulfilment time by running exploratory data analysis (EDA) and statistical analysis on 30,000+ rows of operations data, extracting delivery delay trends and patterns for operations stakeholders.</li>
+    <li>Lowered data errors by 17% by cleaning and standardising 5 raw operational datasets with repeatable data quality checks, improving the reliability of downstream analysis and model inputs.</li>
+    <li>Saved 3 hours of weekly reporting effort by building 8 Python and Excel dashboards that tracked key operational metrics.</li>
+  </ul>
+</div>
+
+<h2>Leadership</h2>
+<div class="entry">
+  <div class="row"><b>Synapse, DA-IICT (Gujarat’s largest techno-cultural festival)</b><span>Gandhinagar, India</span></div>
+  <div class="row role"><span>Deputy Convener, Annual Festival Committee</span><span>Apr 2024 – Nov 2025</span></div>
+  <ul>
+    <li>Delivered the largest mega-show in Synapse history (12,000+ attendees) by owning planning end to end, leading a 50-member team and coordinating logistics, vendors and university leadership.</li>
+    <li>Secured and managed an INR 14M budget (highest in 5 years) plus INR 5M in sponsorship from SBI, ITC and Royal Enfield by writing data-backed proposals and reporting progress clearly to sponsors.</li>
+  </ul>
+</div>
+
+<h2>Projects &amp; Research</h2>
+<div class="entry">
+  <div class="row"><span><b>Pulse: Real-Time Streaming Lakehouse</b> <a class="ln" href="https://github.com/DevammPatel/Pulse">GitHub</a></span><span>Kafka, Spark, Delta Lake, Airflow, dbt, Trino</span></div>
+  <ul><li>Ingested 10,000+ market ticks per second into a Delta Lake medallion architecture (bronze/silver/gold) by building Kafka and Spark Structured Streaming pipelines, with Great Expectations quality gates, dbt marts and Airflow-orchestrated compaction.</li></ul>
+</div>
+<div class="entry">
+  <div class="row"><span><b>CryptoStream: Real-Time Analytics &amp; ML Platform</b> <a class="ln" href="https://github.com/DevammPatel/CryptoStream">GitHub</a></span><span>Python, Kafka, Spark, dbt, DuckDB, MLflow, FastAPI</span></div>
+  <ul><li>Served live price-direction predictions by streaming exchange WebSocket trades through Kafka and Spark into a Parquet lake, modelling them with dbt, and deploying an MLflow-tracked LightGBM model behind a promotion gate with CI.</li></ul>
+</div>
+<div class="entry">
+  <div class="row"><span><b>Sentinel-RAG: Retrieval-Augmented Question Answering</b> <a class="ln" href="https://github.com/DevammPatel/Sentinel-RAG">GitHub</a></span><span>Python, BM25, ONNX, FastAPI, Docker</span></div>
+  <ul><li>Raised top-1 retrieval accuracy from 0.58 to 0.90 on a golden question set by combining BM25 and dense retrieval with cross-encoder reranking, and got all 62 answer-or-refuse decisions right with a calibrated relevance gate and cited sources.</li></ul>
+</div>
+<div class="entry">
+  <div class="row"><span><b>SkillForge AI: Multi-Agent Certification Platform</b> <a class="ln" href="https://skillforge-ai-egcwzshcnjb9uv2wvyspkh.streamlit.app/">Live demo</a></span><span>Azure AI Foundry, Azure AI Search, Azure OpenAI, MCP</span></div>
+  <ul><li>Turned certification goals into study plans, assessments and manager insights by coordinating 5 specialised agents grounded in official Microsoft content through Azure AI Search, built for Microsoft’s Agents League Hackathon and deployed live.</li></ul>
+</div>
+<div class="entry">
+  <div class="row"><span><b>DigiDist: National Digital Economy Intelligence Warehouse</b> <a class="ln" href="https://github.com/DevammPatel/Project-DigiDist">GitHub</a></span><span>Python, PostgreSQL, SQL, Power BI</span></div>
+  <ul><li>Ranked 717 districts on a composite District Prosperity Index by integrating 60,000+ rows from 5 heterogeneous sources into a PostgreSQL star schema with Python ETL and fuzzy name matching, removing 7,300+ error rows, visualised in Power BI.</li></ul>
+</div>
+<div class="entry">
+  <div class="row"><span><b>Onion-Routed Federated Learning for Secure Data Aggregation</b> <a class="ln" href="https://ieeexplore.ieee.org/document/11513191">IEEE Xplore</a></span><span>2026 IEEE TPEC, Texas, USA</span></div>
+  <ul><li>Reached 99.88% global precision (0.043 loss) on the LR-HR DDoS 2024 dataset by co-authoring a privacy-preserving federated learning framework pairing onion routing with a lightweight TinyML model for real-time DDoS detection.</li></ul>
+</div>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <div><b>Programming:</b> Python (Pandas, NumPy, Scikit-Learn, Matplotlib), SQL, C++, JavaScript, Bash, Git/GitHub</div>
+  <div><b>Data Engineering:</b> Kafka, Spark Structured Streaming, Delta Lake, Airflow, dbt, Microsoft Fabric, Docker, ETL, Data Modelling</div>
+  <div><b>Machine Learning &amp; AI:</b> Supervised Learning, Feature Engineering, Model Validation, MLflow, RAG, Multi-Agent Systems, FastAPI</div>
+  <div><b>Analytics &amp; Databases:</b> Statistics, EDA, Time-Series, Anomaly Detection, PostgreSQL, MySQL, Power BI, Grafana, Excel</div>
+</div>
+
+<h2>Achievements</h2>
+<ul>
+  <li>JEE Mains 2022: 98.88 percentile (AIR 10,218) among 1M+ candidates; 1st of 130+ teams at Hackout’25 state hackathon.</li>
+  <li>Organised national hackathons (1,500+ attendees) and social marathons (2,000+); merit-based MYSY scholarship (Gujarat Govt).</li>
+</ul>
+
+<script>
+  // Private copies only: resume/build.sh passes ?phone=... and nothing is stored here.
+  const phone = new URLSearchParams(location.search).get('phone');
+  if (phone) { const el = document.getElementById('phone'); el.textContent = phone; el.hidden = false; }
+</script>
+</body>
+</html>

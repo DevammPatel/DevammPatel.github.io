@@ -25,11 +25,6 @@
     });
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => window.dispatchEvent(new Event('themechange')));
 
-    // The résumé button only appears once assets/resume.pdf exists.
-    fetch('assets/resume.pdf', { method: 'HEAD' })
-      .then((r) => { if (r.ok) $('#resume-link').hidden = false; })
-      .catch(() => {});
-
     // Reveal on scroll.
     const targets = $$('.sec-head, .job, .project, .paper, .creds article, .skill-row, .lead, .edu-grid article, .lab, .about-grid, .contact-links li, .also');
     if ('IntersectionObserver' in window && !reduceMotion) {

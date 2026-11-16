@@ -261,7 +261,6 @@ body[data-lens="ai"] .lede[data-lede="ai"] { display: block; animation: rise .35
 .n.g { border-color: var(--gold); box-shadow: inset 3px 0 0 var(--gold); }
 .arch-side { font-size: 12.5px; color: var(--muted); margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--line); }
 .arch-side b { color: var(--ink); font-weight: 500; }
-.shot { margin-top: 16px; aspect-ratio: 16 / 10; }
 .also { margin-top: 26px; color: var(--muted); font-size: 15px; }
 
 /* Lens: dim what is less relevant, never hide it. */
@@ -396,7 +395,7 @@ body:not([data-lens="all"]) .lens-off:focus-within { opacity: 1; }
 }
 
 @media print {
-  .top, .rail, .flowfig, .lens, .lens-note, .cta, #live, .ask, .shot, .foot p:last-child { display: none !important; }
+  .top, .rail, .flowfig, .lens, .lens-note, .cta, #live, .ask, .foot p:last-child { display: none !important; }
   body { background: #fff; color: #000; font-size: 11pt; }
   .sec { padding-top: 24pt; }
   .project, .job { break-inside: avoid; }
