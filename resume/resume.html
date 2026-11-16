@@ -8,8 +8,7 @@
 <!--
   One-page resume, built to PDF by resume/build.sh (headless Chrome).
   Edit the text below, run the script, and assets/resume.pdf is regenerated.
-  The phone number is deliberately not in this file: the script adds it only
-  to the private copy in resume/private/, which is never committed.
+  The contact line under the name is kept on one line by the script at the bottom.
 -->
 <style>
   @font-face { font-family: "CMU Serif"; font-weight: 400; font-style: normal;
@@ -51,7 +50,7 @@
 
 <h1>Devamm Patel</h1>
 <p class="contact">
-  <span>Leeds, UK</span><span id="phone" hidden></span><span><a href="mailto:devammpatelstudy@gmail.com">devammpatelstudy@gmail.com</a></span><span><a href="https://www.linkedin.com/in/devamm-patel-197891265/">linkedin.com/in/devamm-patel-197891265</a></span><span><a href="https://github.com/DevammPatel">github.com/DevammPatel</a></span><span><a href="https://devammpatel.github.io/">devammpatel.github.io</a></span>
+  <span>Leeds, UK</span><span id="phone">+44 7778 949041</span><span><a href="mailto:devammpatelstudy@gmail.com">devammpatelstudy@gmail.com</a></span><span><a href="https://www.linkedin.com/in/devamm-patel-197891265/">linkedin.com/in/devamm-patel-197891265</a></span><span><a href="https://github.com/DevammPatel">github.com/DevammPatel</a></span><span><a href="https://devammpatel.github.io/">devammpatel.github.io</a></span>
 </p>
 
 <h2>Profile</h2>
@@ -136,9 +135,6 @@
 </ul>
 
 <script>
-  // Private copies only: resume/build.sh passes ?phone=... and nothing is stored here.
-  const phone = new URLSearchParams(location.search).get('phone');
-  if (phone) { const el = document.getElementById('phone'); el.textContent = phone; el.hidden = false; }
   // Keep the contact details on one line: step the size down until they fit the text width.
   const fit = () => { const c = document.querySelector('.contact'); let s = 9.1; c.style.fontSize = s + 'pt'; while (c.scrollWidth > c.clientWidth && s > 7) { s -= 0.05; c.style.fontSize = s + 'pt'; } };
   fit(); document.fonts.ready.then(fit);

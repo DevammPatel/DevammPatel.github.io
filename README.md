@@ -10,7 +10,7 @@ Personal site of Devamm Patel. Plain HTML, CSS and JavaScript: no framework, no 
 | `assets/css/style.css` | Design. Colours are variables at the top of the file. |
 | `assets/js/app.js` | The role lens, the hero animation, the in-page search and the live stream demo. |
 | `assets/img/` | Photos. See `assets/img/README.md` for the file names to use. |
-| `assets/resume.pdf` | The public one-page resume (no phone number). Built from `resume/resume.html`. |
+| `assets/resume.pdf` | The one-page resume. Built from `resume/resume.html`. |
 | `resume/resume.html` | Resume source. Edit the text here. |
 | `resume/build.sh` | Rebuilds the resume PDF with headless Chrome and checks it is still one page. |
 | `404.html`, `robots.txt`, `sitemap.xml` | Not-found page and search-engine files. |
@@ -36,13 +36,7 @@ Edit `resume/resume.html`, then:
 ./resume/build.sh
 ```
 
-That rewrites `assets/resume.pdf` (public, no phone number). To also get a copy with your phone number for direct applications, pass the number:
-
-```bash
-./resume/build.sh "+44 0000 000000"
-```
-
-The phone copy is written to `resume/private/`, which is git-ignored and never published. The script stops with an error if the text no longer fits on one page.
+That rewrites `assets/resume.pdf`. The script stops with an error if the text no longer fits on one page.
 
 ## Run it locally
 
