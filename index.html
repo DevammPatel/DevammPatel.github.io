@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devamm Patel · Data &amp; AI Engineer</title>
+<meta name="description" content="Devamm Patel builds the layer between raw data and good decisions: streaming lakehouses, warehouses, and retrieval and agent systems. MSc AI at the University of Leeds, Microsoft Certified Fabric Data Engineer, published IEEE researcher.">
+<meta name="author" content="Devamm Patel">
+<link rel="canonical" href="https://devammpatel.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Devamm Patel · Data & AI Engineer">
+<meta property="og:description" content="Streaming lakehouses, warehouses, and retrieval and agent systems. MSc AI at Leeds, Microsoft Certified Fabric Data Engineer, published IEEE researcher.">
+<meta property="og:url" content="https://devammpatel.github.io/">
+<meta property="og:image" content="https://devammpatel.github.io/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3F0E8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F100D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2315150F'/%3E%3Ccircle cx='9' cy='20' r='3' fill='%23B8703A'/%3E%3Ccircle cx='16' cy='15' r='3' fill='%23A4ABB3'/%3E%3Ccircle cx='23' cy='10' r='3' fill='%23E5B53A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  // Set theme before first paint to avoid a flash.
+  (function () {
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Devamm Patel",
+  "url": "https://devammpatel.github.io/",
+  "jobTitle": "Data & AI Engineer",
+  "address": { "@type": "PostalAddress", "addressLocality": "Leeds", "addressCountry": "GB" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Leeds" },
+    { "@type": "CollegeOrUniversity", "name": "Dhirubhai Ambani University (DA-IICT)" }
+  ],
+  "sameAs": ["https://github.com/DevammPatel", "https://www.linkedin.com/in/Devamm"]
+}
+</script>
+</head>
+<body data-lens="all">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ───────────── Top bar ───────────── -->
+<header class="top" id="top">
+  <a class="mark" href="#top" aria-label="Devamm Patel, home">
+    <span class="mark-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span>Devamm Patel</span>
+  </a>
+  <nav class="top-nav" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#work">Work</a>
+    <a href="#live">Live</a>
+    <a href="#proof">Proof</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="top-actions">
+    <button class="ask-btn" type="button" data-open-ask aria-haspopup="dialog">
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span>Ask this page</span><kbd>⌘K</kbd>
+    </button>
+    <button class="icon-btn" type="button" id="theme-toggle" aria-label="Switch colour theme">
+      <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ───────────── Pipeline rail (scroll position as a DAG) ───────────── -->
+<nav class="rail" aria-label="Page pipeline">
+  <ol>
+    <li><a href="#about"><i></i><span><b>Source</b>About</span></a></li>
+    <li><a href="#experience"><i></i><span><b>Ingest</b>Experience</span></a></li>
+    <li><a href="#work"><i></i><span><b>Transform</b>Work</span></a></li>
+    <li><a href="#live"><i></i><span><b>Stream</b>Live demo</span></a></li>
+    <li><a href="#proof"><i></i><span><b>Validate</b>Proof</span></a></li>
+    <li><a href="#contact"><i></i><span><b>Serve</b>Contact</span></a></li>
+  </ol>
+</nav>
+
+<main id="main">
+
+<!-- ───────────── Hero ───────────── -->
+<section class="hero" data-title="Introduction">
+  <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Open to Data Engineering, Data Science and AI roles · Leeds, UK</p>
+  <h1>I build the layer between <em>raw data</em> and <em>good decisions</em>.</h1>
+
+  <div class="ledes">
+    <p class="lede" data-lede="all" data-p>MSc AI student at the University of Leeds, Microsoft Certified Fabric Data Engineer and published IEEE researcher. I build streaming pipelines, warehouses, and the retrieval and agent systems that reason over them.</p>
+    <p class="lede" data-lede="de">Streaming lakehouses on Kafka, Spark and Delta Lake, warehouses with audited ETL, and the Microsoft Fabric Data Engineer certification (DP-700) to go with them.</p>
+    <p class="lede" data-lede="ds">Predictive models that beat their baseline by 22% during an internship, evaluation harnesses that publish the honest number, and an IEEE paper on federated learning.</p>
+    <p class="lede" data-lede="da">Exploratory analysis and KPI dashboards that cut reporting time and informed a 12% reduction in fulfilment time, plus a prosperity index ranking 717 districts.</p>
+    <p class="lede" data-lede="ai">Retrieval that cites its source and refuses when it should, a five-agent platform on Azure AI Foundry, and an IEEE paper on privacy-preserving federated learning.</p>
+  </div>
+
+  <div class="lens" role="group" aria-label="Read this page as a specific role">
+    <span class="lens-label">Read as</span>
+    <button type="button" data-lens-btn="all" aria-pressed="true">Everything</button>
+    <button type="button" data-lens-btn="de" aria-pressed="false">Data Engineering</button>
+    <button type="button" data-lens-btn="ds" aria-pressed="false">Data Science</button>
+    <button type="button" data-lens-btn="da" aria-pressed="false">Analytics</button>
+    <button type="button" data-lens-btn="ai" aria-pressed="false">AI &amp; Agents</button>
+  </div>
+  <p class="lens-note" id="lens-note" aria-live="polite"></p>
+
+  <div class="cta">
+    <a class="btn primary" href="#work">See the work</a>
+    <a class="btn" href="assets/resume.pdf" id="resume-link" hidden>Résumé (PDF)</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+
+  <figure class="flowfig">
+    <div class="flow-stage">
+      <canvas id="hero-flow" aria-hidden="true"></canvas>
+      <span class="gate g-raw">Raw</span>
+      <span class="gate g-b" style="left:26%">Bronze <small>land</small></span>
+      <span class="gate g-s" style="left:50%">Silver <small>clean</small></span>
+      <span class="gate g-g" style="left:74%">Gold <small>model</small></span>
+      <span class="gate g-out">Decision</span>
+    </div>
+    <figcaption><b>Fig. 1</b> What I do, drawn live. Noisy events enter on the left, bad records are dropped, the rest are conformed and modelled, and one clean signal comes out. Move your pointer through it: the pipeline recovers.</figcaption>
+  </figure>
+
+  <ul class="kpis">
+    <li data-p data-k="publication paper research"><strong>IEEE</strong><span>Published researcher, 2026 IEEE TPEC, Texas</span></li>
+    <li data-p data-k="certification certified microsoft"><strong>DP-700</strong><span>Microsoft Certified: Fabric Data Engineer Associate</span></li>
+    <li data-p data-k="award hackathon winner"><strong>1st of 130+</strong><span>teams at the Hackout'25 state hackathon</span></li>
+    <li data-p data-k="leadership team event"><strong>12,000+</strong><span>people at the festival show I led a 50-person team to deliver</span></li>
+  </ul>
+</section>
+
+<!-- ───────────── 01 About ───────────── -->
+<section id="about" class="sec" data-title="About" data-stage>
+  <header class="sec-head">
+    <span class="stage"><i class="dot"></i>01 · Source</span>
+    <h2>The short version</h2>
+  </header>
+  <div class="about-grid">
+    <div class="prose">
+      <p class="big" data-p>Most teams have data everywhere and insight nowhere. Pipelines run, signals get buried, and nobody trusts the number on the dashboard. I build the systems that fix that.</p>
+      <p data-p data-k="education background summary">I’m studying for an MSc in Advanced Computer Science (Artificial Intelligence) at the University of Leeds, after a B.Tech in Information &amp; Communication Technology at DA-IICT. Along the way: two data internships, an IEEE paper on federated learning, the Microsoft Fabric Data Engineer certification, and two seasons helping run Gujarat’s largest techno-cultural festival.</p>
+      <p data-p data-k="approach principles how work">Three habits show up in everything below. I measure before I claim, so each project ships with its evaluation and the number it actually reached. I make things run with one command, because a pipeline nobody else can start is a demo. And I write for the person who has to trust the output, not the person who built it.</p>
+    </div>
+    <aside class="about-side">
+      <div class="frame portrait">
+        <img src="assets/img/portrait.jpg" alt="Portrait of Devamm Patel" loading="lazy" onerror="this.parentNode.classList.add('empty');this.remove()">
+        <span class="mono-fallback" aria-hidden="true">DP</span>
+      </div>
+      <dl class="facts">
+        <div data-p data-k="location where based"><dt>Based</dt><dd>Leeds, United Kingdom</dd></div>
+        <div><dt>Now</dt><dd>MSc Advanced Computer Science (AI), University of Leeds</dd></div>
+        <div><dt>Before</dt><dd>B.Tech ICT, DA-IICT, Gandhinagar</dd></div>
+        <div><dt>Focus</dt><dd>Streaming data platforms, warehousing, RAG and multi-agent systems</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ───────────── 02 Experience ───────────── -->
+<section id="experience" class="sec" data-title="Experience" data-stage>
+  <header class="sec-head">
+    <span class="stage"><i class="dot"></i>02 · Ingest</span>
+    <h2>Experience</h2>
+  </header>
+
+  <ol class="timeline">
+    <li class="job" data-lens="ds de da">
+      <div class="when">Jan – May 2026<small>Surat, India</small></div>
+      <div class="what">
+        <h3>Data Scientist Intern <span>Sridix Technology</span></h3>
+        <p class="ctx">Data science and analytics services</p>
+        <ul>
+          <li data-p data-lens="ds" data-k="machine learning model accuracy scikit-learn pandas numpy"><b class="num">+22%</b> predictive model accuracy over baseline, through feature engineering, hyperparameter tuning and model validation in Python with Pandas, NumPy and Scikit-Learn.</li>
+          <li data-p data-lens="de ds" data-k="data quality cleaning etl"><b class="num">−18%</b> missing and inconsistent entries across 50,000+ records, using automated Python checks that validate and clean each source before it reaches a model or report.</li>
+          <li data-p data-lens="de" data-k="pipeline performance optimisation team git"><b class="num">−20%</b> end-to-end processing time, by profiling and fixing three pipeline bottlenecks with a four-person engineering team on a shared Git codebase.</li>
+          <li data-p data-lens="da ds" data-k="dashboards stakeholders reporting communication"><b class="num">−15%</b> stakeholder reporting time, by replacing manual Excel summaries with 10+ dashboards and explaining model outcomes to non-technical colleagues.</li>
+        </ul>
+      </div>
+    </li>
+    <li class="job" data-lens="da de ds">
+      <div class="when">May – Jul 2025<small>Ahmedabad, India</small></div>
+      <div class="what">
+        <h3>Data Analyst Intern <span>Lambdafy Data Solutions</span></h3>
+        <p class="ctx">Logistics and operations analytics</p>
+        <ul>
+          <li data-p data-lens="da ds" data-k="eda statistics logistics delivery analysis"><b class="num">−12%</b> fulfilment time, informed by exploratory and statistical analysis of 30,000+ rows of operations data that surfaced where and why deliveries were delayed.</li>
+          <li data-p data-lens="de da" data-k="data quality cleaning standardisation"><b class="num">−17%</b> data errors, from cleaning and standardising five raw operational datasets with repeatable quality checks.</li>
+          <li data-p data-lens="da" data-k="dashboards kpi excel reporting automation"><b class="num">3 hrs</b> of reporting effort saved every week, by building eight Python and Excel KPI dashboards.</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+
+  <div class="edu">
+    <h3 class="sub">Education</h3>
+    <div class="edu-grid">
+      <article data-p data-k="education degree masters university study">
+        <span class="when-inline">Sep 2026 – present</span>
+        <h4>University of Leeds</h4>
+        <p>MSc, Advanced Computer Science (Artificial Intelligence)</p>
+      </article>
+      <article data-p data-k="education degree bachelors undergraduate university coursework">
+        <span class="when-inline">Aug 2022 – May 2026</span>
+        <h4>Dhirubhai Ambani University (DA-IICT)</h4>
+        <p>B.Tech, Information &amp; Communication Technology. Coursework in probability and statistics, linear algebra, database systems, algorithms, operating systems and computer networks.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── 03 Work ───────────── -->
+<section id="work" class="sec" data-title="Work" data-stage>
+  <header class="sec-head">
+    <span class="stage"><i class="dot"></i>03 · Transform</span>
+    <h2>Selected work</h2>
+    <p>Each project shows its architecture, because the shape of a system says more than a list of tools. Numbers are the ones each repository’s own README reports.</p>
+  </header>
+
+  <div class="projects" id="projects">
+
+    <article class="project" data-lens="de da" data-title="Pulse">
+      <div class="p-body">
+        <span class="p-no">01</span>
+        <h3>Pulse</h3>
+        <p class="p-tag">Real-time streaming lakehouse for NSE/BSE market data</p>
+        <p data-p data-k="kafka spark delta lake lakehouse streaming medallion airflow trino dbt great expectations">Market ticks stream through Kafka into a Delta Lake medallion on object storage. Spark Structured Streaming lands raw ticks in bronze, cleans them into silver and rolls them up into one-minute OHLC candles in gold. Trino serves the tables to dbt marts and live dashboards, Great Expectations gates data quality, and Airflow runs the batch side: quality, dbt and Delta compaction.</p>
+        <ul class="p-metrics">
+          <li><strong>10,000+</strong><span>ticks per second from the producer</span></li>
+          <li><strong>3 layers</strong><span>bronze, silver, gold in Delta Lake</span></li>
+          <li><strong>1 command</strong><span><code>docker compose up</code> starts all of it</span></li>
+        </ul>
+        <p class="p-links"><a href="https://github.com/DevammPatel/Pulse" target="_blank" rel="noopener">Code on GitHub <span aria-hidden="true">↗</span></a></p>
+      </div>
+      <div class="p-arch">
+        <span class="arch-label">Architecture</span>
+        <ol class="flow">
+          <li><span class="n"><b>Tick producer</b><i>NSE/BSE</i></span></li>
+          <li><span class="n"><b>Kafka</b><i>KRaft broker</i></span></li>
+          <li><span class="n"><b>Spark</b><i>structured streaming</i></span></li>
+          <li><span class="n b"><b>Bronze</b><i>raw ticks</i></span></li>
+          <li><span class="n s"><b>Silver</b><i>cleaned</i></span></li>
+          <li><span class="n g"><b>Gold</b><i>1-min OHLC</i></span></li>
+          <li><span class="n"><b>Trino + dbt</b><i>marts</i></span></li>
+          <li><span class="n"><b>Grafana / Superset</b><i>live dashboards</i></span></li>
+        </ol>
+        <p class="arch-side">Alongside: <b>Great Expectations</b> quality gate · <b>Airflow</b> batch orchestration · <b>MinIO</b> (S3-compatible) storage</p>
+        <div class="frame shot"><img src="assets/img/pulse.jpg" alt="Pulse dashboard screenshot" loading="lazy" onerror="this.parentNode.remove()"></div>
+      </div>
+    </article>
+
+    <article class="project" data-lens="de ds da ai" data-title="CryptoStream">
+      <div class="p-body">
+        <span class="p-no">02</span>
+        <h3>CryptoStream</h3>
+        <p class="p-tag">Real-time crypto analytics and prediction platform</p>
+        <p data-p data-k="kafka redpanda spark dbt duckdb mlflow lightgbm fastapi streamlit dagster docker websocket machine learning mlops ci">One project that covers data engineering, analytics, data science and ML operations at once. Live Binance WebSocket trades flow through Redpanda and Spark into a Parquet lake; dbt models them in a DuckDB warehouse; a LightGBM price-direction model is tracked in MLflow and only promoted if it clears a gate; FastAPI serves predictions; a Streamlit dashboard shows everything live, with an LLM-written market summary.</p>
+        <ul class="p-metrics">
+          <li><strong>Every 15 min</strong><span>Dagster compacts, loads, runs dbt and retrains</span></li>
+          <li><strong>Promotion gate</strong><span>a new model ships only if it beats the last one</span></li>
+          <li><strong>CI on every push</strong><span>ruff, dbt build, pytest and Spark tests</span></li>
+        </ul>
+        <p class="p-links"><a href="https://github.com/DevammPatel/CryptoStream" target="_blank" rel="noopener">Code on GitHub <span aria-hidden="true">↗</span></a> <a href="#live">See it in miniature below <span aria-hidden="true">↓</span></a></p>
+      </div>
+      <div class="p-arch">
+        <span class="arch-label">Architecture</span>
+        <ol class="flow">
+          <li><span class="n"><b>Binance WS</b><i>live trades</i></span></li>
+          <li><span class="n"><b>Redpanda</b><i>Kafka API</i></span></li>
+          <li><span class="n"><b>Spark</b><i>windowed bars</i></span></li>
+          <li><span class="n b"><b>Parquet lake</b><i>SeaweedFS</i></span></li>
+          <li><span class="n s"><b>dbt + DuckDB</b><i>warehouse</i></span></li>
+          <li><span class="n g"><b>LightGBM</b><i>MLflow tracked</i></span></li>
+          <li><span class="n"><b>FastAPI</b><i>/predict</i></span></li>
+          <li><span class="n"><b>Streamlit</b><i>dashboard</i></span></li>
+        </ol>
+        <p class="arch-side">Alongside: <b>Dagster</b> orchestration · <b>Docker Compose</b> for the whole stack · runs free on a laptop</p>
+        <div class="frame shot"><img src="assets/img/cryptostream.jpg" alt="CryptoStream dashboard screenshot" loading="lazy" onerror="this.parentNode.remove()"></div>
+      </div>
+    </article>
+
+    <article class="project" data-lens="ai ds" data-title="Sentinel-RAG">
+      <div class="p-body">
+        <span class="p-no">03</span>
+        <h3>Sentinel-RAG</h3>
+        <p class="p-tag">Question answering over SEBI and RBI regulation, with citations</p>
+        <p data-p data-k="rag retrieval llm bm25 dense vectors reranking cross-encoder onnx guardrails evaluation opentelemetry tracing fastapi docker agent">Ask a question about Indian securities and banking regulation and get an answer that cites the exact passage it came from. Hybrid retrieval (BM25 plus dense vectors, fused with reciprocal rank fusion), a cross-encoder reranker on ONNX Runtime, and an agent loop that rewrites and retries when retrieval is weak, refuses when nothing relevant is found, and falls back to quoting passages if the LLM is unavailable. Guardrails, OpenTelemetry tracing and a hardened public API included.</p>
+        <ul class="p-metrics">
+          <li><strong>0.90</strong><span>Hit@1 with hybrid retrieval and reranking (BM25 alone: 0.58)</span></li>
+          <li><strong>1.00</strong><span>Hit@5 on 50 answerable golden questions</span></li>
+          <li><strong>62 / 62</strong><span>answer-or-refuse decisions correct at the calibrated threshold</span></li>
+        </ul>
+        <p class="p-links"><a href="https://github.com/DevammPatel/Sentinel-RAG" target="_blank" rel="noopener">Code and evaluation on GitHub <span aria-hidden="true">↗</span></a> <button type="button" class="linklike" data-open-ask>Try the same idea on this page <span aria-hidden="true">→</span></button></p>
+      </div>
+      <div class="p-arch">
+        <span class="arch-label">Architecture</span>
+        <ol class="flow">
+          <li><span class="n"><b>Question</b><i>guardrails</i></span></li>
+          <li><span class="n b"><b>BM25 + dense</b><i>candidates</i></span></li>
+          <li><span class="n s"><b>RRF fusion</b><i>merge ranks</i></span></li>
+          <li><span class="n s"><b>Cross-encoder</b><i>rerank, ONNX</i></span></li>
+          <li><span class="n g"><b>Relevance gate</b><i>calibrated</i></span></li>
+          <li><span class="n"><b>Answer</b><i>cited, or refused</i></span></li>
+        </ol>
+        <p class="arch-side">Corpus: <b>37</b> official documents, <b>1,606</b> passages · generation on free tiers, everything else local</p>
+        <div class="frame shot"><img src="assets/img/sentinel-rag.jpg" alt="Sentinel-RAG chat interface screenshot" loading="lazy" onerror="this.parentNode.remove()"></div>
+      </div>
+    </article>
+
+    <article class="project" data-lens="ai" data-title="SkillForge AI">
+      <div class="p-body">
+        <span class="p-no">04</span>
+        <h3>SkillForge AI</h3>
+        <p class="p-tag">Five-agent certification readiness platform on Azure AI Foundry</p>
+        <p data-p data-k="multi-agent agents azure ai foundry azure openai ai search mcp model context protocol knowledge base hackathon microsoft streamlit">Built for Microsoft’s Agents League Hackathon. Five coordinated agents turn a certification goal into a plan: one profiles the learner and scores readiness, one curates a learning path grounded in official Microsoft content, one schedules study around the learner’s real workload, one writes practice assessments, and one gives managers a view of who is at risk. Grounded with Azure AI Search and a Foundry knowledge base rather than model memory.</p>
+        <ul class="p-metrics">
+          <li><strong>5 agents</strong><span>each with a single responsibility</span></li>
+          <li><strong>Grounded</strong><span>answers retrieved from certification material first</span></li>
+          <li><strong>Live</strong><span>deployed and usable today</span></li>
+        </ul>
+        <p class="p-links"><a href="https://skillforge-ai-egcwzshcnjb9uv2wvyspkh.streamlit.app/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a> <a href="https://github.com/DevammPatel/skillforge-ai" target="_blank" rel="noopener">Code on GitHub <span aria-hidden="true">↗</span></a></p>
+      </div>
+      <div class="p-arch">
+        <span class="arch-label">Agent workflow</span>
+        <ol class="flow">
+          <li><span class="n"><b>Learner profile</b><i>readiness, risk</i></span></li>
+          <li><span class="n b"><b>Learning curator</b><i>grounded path</i></span></li>
+          <li><span class="n s"><b>Study planner</b><i>workload-aware</i></span></li>
+          <li><span class="n s"><b>Assessment</b><i>practice questions</i></span></li>
+          <li><span class="n g"><b>Manager insights</b><i>workforce view</i></span></li>
+        </ol>
+        <p class="arch-side">On: <b>Azure AI Foundry</b> agents · <b>Azure AI Search</b> · <b>Azure OpenAI</b> · <b>MCP</b></p>
+        <div class="frame shot"><img src="assets/img/skillforge.jpg" alt="SkillForge AI screenshot" loading="lazy" onerror="this.parentNode.remove()"></div>
+      </div>
+    </article>
+
+    <article class="project" data-lens="de da" data-title="DigiDist">
+      <div class="p-body">
+        <span class="p-no">05</span>
+        <h3>DigiDist</h3>
+        <p class="p-tag">National digital economy intelligence warehouse</p>
+        <p data-p data-k="postgresql sql warehouse star schema etl fuzzy matching rapidfuzz power bi data modelling window functions pandas">A district-level PostgreSQL warehouse that integrates five heterogeneous government-style datasets: UPI payments, broadband subscribers, GST registrations, e-governance transactions and demographics. Python ETL parses inconsistent dates, drops impossible values and resolves messy district names with RapidFuzz fuzzy matching. On top sits a composite District Prosperity Index computed in layered SQL, exported for Power BI.</p>
+        <ul class="p-metrics">
+          <li><strong>717</strong><span>districts across 35 states and territories</span></li>
+          <li><strong>60,000+</strong><span>rows conformed into one star schema</span></li>
+          <li><strong>7,300+</strong><span>error rows removed, audited on every run</span></li>
+        </ul>
+        <p class="p-links"><a href="https://github.com/DevammPatel/Project-DigiDist" target="_blank" rel="noopener">Code on GitHub <span aria-hidden="true">↗</span></a></p>
+      </div>
+      <div class="p-arch">
+        <span class="arch-label">Architecture</span>
+        <ol class="flow">
+          <li><span class="n"><b>5 sources</b><i>CSV extracts</i></span></li>
+          <li><span class="n b"><b>Python ETL</b><i>clean, fuzzy-match</i></span></li>
+          <li><span class="n s"><b>PostgreSQL</b><i>star schema</i></span></li>
+          <li><span class="n g"><b>Prosperity Index</b><i>layered SQL</i></span></li>
+          <li><span class="n"><b>Power BI</b><i>regional dashboards</i></span></li>
+        </ol>
+        <p class="arch-side">Every run writes before and after error counts to an <b>etl_audit</b> table</p>
+        <div class="frame shot"><img src="assets/img/digidist.jpg" alt="DigiDist Power BI dashboard screenshot" loading="lazy" onerror="this.parentNode.remove()"></div>
+      </div>
+    </article>
+
+    <article class="project" data-lens="ai" data-title="Schedule my medicines">
+      <div class="p-body">
+        <span class="p-no">06</span>
+        <h3>Schedule my medicines</h3>
+        <p class="p-tag">Hackathon concept: a daily medicine timetable inside the NHS App</p>
+        <p data-p data-k="hackathon healthcare nhs team aws lambda next.js llm safety">Built with Team Double Helix at the Leeds AI Society’s AI in Healthcare Hackathon, October 2026. People on ten or more medicines were asking chatbots to plan their day. Our prototype does it safely: it combines a patient’s prescriptions with their routine and rules drawn from NHS guidance, then an explainable scheduler and an independent checker produce the timetable. Language models help with forms and explanations only, never the schedule itself. Synthetic patient data throughout.</p>
+        <ul class="p-metrics">
+          <li><strong>Rules, not a model</strong><span>decide every dose time</span></li>
+          <li><strong>3 languages</strong><span>English, Polish and Urdu</span></li>
+          <li><strong>2 days</strong><span>from idea to a deployed prototype on AWS</span></li>
+        </ul>
+        <p class="p-links"><a href="https://d2s11spb9096vx.cloudfront.net/" target="_blank" rel="noopener">Try the prototype <span aria-hidden="true">↗</span></a> <a href="https://leeds-ai-hackathon.devpost.com/" target="_blank" rel="noopener">The hackathon <span aria-hidden="true">↗</span></a></p>
+      </div>
+      <div class="p-arch">
+        <span class="arch-label">How a schedule is made</span>
+        <ol class="flow">
+          <li><span class="n"><b>Prescriptions</b><i>from the record</i></span></li>
+          <li><span class="n b"><b>Your routine</b><i>meals, sleep</i></span></li>
+          <li><span class="n s"><b>Scheduler</b><i>NHS guidance rules</i></span></li>
+          <li><span class="n s"><b>Checker</b><i>independent</i></span></li>
+          <li><span class="n g"><b>Timeline</b><i>reminders</i></span></li>
+          <li><span class="n"><b>Pharmacist</b><i>review on request</i></span></li>
+        </ol>
+        <p class="arch-side">A concept prototype, not an NHS service</p>
+        <div class="frame shot"><img src="assets/img/medicines.jpg" alt="Schedule my medicines prototype screenshot" loading="lazy" onerror="this.parentNode.remove()"></div>
+      </div>
+    </article>
+  </div>
+
+  <p class="also" data-p data-lens="de da" data-k="mysql database dbms er modelling normalisation sql">Also: <a href="https://github.com/DevammPatel/DBMS_Project_TravelSafari" target="_blank" rel="noopener">Travel Safari</a>, a tours and travel management database normalised to 3NF across 12+ MySQL tables with four user roles, and a <a href="https://github.com/DevammPatel?tab=repositories" target="_blank" rel="noopener">handful of analysis notebooks</a> on GitHub.</p>
+</section>
+
+<!-- ───────────── 04 Live ───────────── -->
+<section id="live" class="sec" data-title="Live demo" data-stage>
+  <header class="sec-head">
+    <span class="stage"><i class="dot"></i>04 · Stream</span>
+    <h2>A stream, windowed in your browser</h2>
+    <p data-p data-k="anomaly detection streaming sliding window z-score websocket live demo time series">CryptoStream in miniature. Trades arrive over a WebSocket, are sampled twice a second, and each new return is scored against a sliding window of the last 60. Anything more than four standard deviations out is flagged. No server of mine is involved: this is your browser doing the work.</p>
+  </header>
+
+  <div class="lab">
+    <div class="lab-head">
+      <span class="feed" id="lab-feed"><i></i><span>Waiting to start</span></span>
+      <div class="lab-actions">
+        <button type="button" class="btn small" id="lab-spike">Inject a spike</button>
+        <button type="button" class="btn small ghost" id="lab-pause" aria-pressed="false">Pause</button>
+      </div>
+    </div>
+    <canvas id="lab-chart" role="img" aria-label="Live price chart with a rolling band and flagged anomalies"></canvas>
+    <dl class="lab-stats">
+      <div><dt>Last price</dt><dd id="s-price">–</dd></div>
+      <div><dt>Events in</dt><dd id="s-events">0</dd></div>
+      <div><dt>Events / sec</dt><dd id="s-eps">0</dd></div>
+      <div><dt>Current z-score</dt><dd id="s-z">–</dd></div>
+      <div><dt>Anomalies flagged</dt><dd id="s-anom">0</dd></div>
+    </dl>
+    <ol class="lab-log" id="lab-log" aria-live="polite"><li class="empty">Flagged events will appear here. Try injecting a spike.</li></ol>
+  </div>
+</section>
+
+<!-- ───────────── 05 Proof ───────────── -->
+<section id="proof" class="sec" data-title="Proof" data-stage>
+  <header class="sec-head">
+    <span class="stage"><i class="dot"></i>05 · Validate</span>
+    <h2>Research, credentials and skills</h2>
+  </header>
+
+  <article class="paper">
+    <span class="arch-label">Publication · IEEE Xplore</span>
+    <h3 data-p data-k="publication paper research ieee federated learning onion routing tinyml ddos security privacy vanet 5g">Secure Data Aggregation for Oilfield Transport &amp; Inspection Vehicles using Onion-Routed Federated Learning</h3>
+    <p data-p data-k="publication paper research federated learning precision ddos tinyml">Co-authored and presented at the 2026 IEEE Texas Power and Energy Conference (TPEC). A privacy-preserving federated learning framework that pairs onion routing with a lightweight TinyML model for real-time DDoS detection in vehicular networks, with model updates aggregated securely over 5G between edge nodes.</p>
+    <ul class="p-metrics">
+      <li><strong>99.88%</strong><span>global precision on the LR-HR DDoS 2024 dataset</span></li>
+      <li><strong>0.043</strong><span>training loss</span></li>
+    </ul>
+    <p class="p-links"><a href="https://ieeexplore.ieee.org/document/11513191" target="_blank" rel="noopener">Read on IEEE Xplore <span aria-hidden="true">↗</span></a></p>
+  </article>
+
+  <div class="creds">
+    <article data-p data-lens="de da" data-k="certification certified microsoft fabric dp-700 data engineer">
+      <span class="when-inline">Oct 2026</span>
+      <h4>Microsoft Certified: Fabric Data Engineer Associate</h4>
+      <p>DP-700</p>
+    </article>
+    <article data-p data-lens="ai" data-k="certification google gen ai agents adk">
+      <span class="when-inline">2026</span>
+      <h4>Google Gen AI Academy</h4>
+      <p>ADK Challenge Lab: structured-output agents and sequential multi-agent pipelines</p>
+    </article>
+    <article data-p data-k="award hackathon winner first place">
+      <span class="when-inline">2025</span>
+      <h4>1st place, Hackout'25</h4>
+      <p>State-level hackathon, first among 130+ teams</p>
+    </article>
+    <article data-p data-k="award exam jee scholarship academic">
+      <span class="when-inline">2022</span>
+      <h4>JEE Mains: 98.88 percentile</h4>
+      <p>All-India rank 10,218 among 1M+ candidates, and the merit-based MYSY scholarship from the Government of Gujarat</p>
+    </article>
+  </div>
+
+  <h3 class="sub">Stack I reach for</h3>
+  <div class="skills">
+    <div class="skill-row" data-p data-k="skills data engineering tools">
+      <h4>Data engineering</h4>
+      <ul>
+        <li data-lens="de">Apache Kafka</li><li data-lens="de">Spark Structured Streaming</li><li data-lens="de">Delta Lake</li><li data-lens="de">Airflow</li><li data-lens="de">Dagster</li><li data-lens="de da">dbt</li><li data-lens="de">Trino</li><li data-lens="de">Great Expectations</li><li data-lens="de">Microsoft Fabric</li><li data-lens="de">Docker</li>
+      </ul>
+    </div>
+    <div class="skill-row" data-p data-k="skills ai machine learning tools">
+      <h4>AI and ML</h4>
+      <ul>
+        <li data-lens="ai">RAG</li><li data-lens="ai">Hybrid retrieval &amp; reranking</li><li data-lens="ai">Azure AI Foundry</li><li data-lens="ai">Multi-agent systems</li><li data-lens="ai">LangChain</li><li data-lens="ai ds">FAISS</li><li data-lens="ds ai">Scikit-Learn</li><li data-lens="ds">LightGBM</li><li data-lens="ds">MLflow</li><li data-lens="ds ai">Federated learning</li>
+      </ul>
+    </div>
+    <div class="skill-row" data-p data-k="skills programming languages databases">
+      <h4>Languages and stores</h4>
+      <ul>
+        <li data-lens="de ds da ai">Python</li><li data-lens="de da ds">SQL</li><li>C++</li><li>JavaScript</li><li>Bash</li><li data-lens="de da">PostgreSQL</li><li data-lens="de da">MySQL</li><li>MongoDB</li><li data-lens="de da">DuckDB</li><li data-lens="de">AWS S3</li>
+      </ul>
+    </div>
+    <div class="skill-row" data-p data-k="skills analytics statistics visualisation">
+      <h4>Analysis and serving</h4>
+      <ul>
+        <li data-lens="da ds">Pandas &amp; NumPy</li><li data-lens="da ds">Statistical testing</li><li data-lens="da ds">Time-series &amp; anomaly detection</li><li data-lens="da">Power BI</li><li data-lens="da de">Grafana</li><li data-lens="da">Excel</li><li data-lens="ai de ds">FastAPI</li><li data-lens="ds da ai">Streamlit</li><li data-lens="ai">OpenTelemetry</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lead">
+    <div class="lead-copy">
+      <span class="arch-label">Beyond the terminal</span>
+      <h3>Deputy Convener, Synapse <span>DA-IICT · Apr 2024 – Nov 2025</span></h3>
+      <p data-p data-k="leadership team management budget sponsorship event festival organising stakeholder">Synapse is Gujarat’s largest techno-cultural festival. I owned the mega-show end to end and delivered the largest in the festival’s history: 12,000+ attendees, a 50-member team, and coordination across logistics, vendors and university leadership.</p>
+      <p data-p data-k="leadership budget sponsorship fundraising proposals">I secured and managed a budget of INR 14M, the highest in five years, and raised INR 5M in sponsorship from SBI, ITC and Royal Enfield with data-backed proposals. I also helped organise national hackathons (1,500+ attendees) and social marathons (2,000+).</p>
+    </div>
+    <div class="lead-side">
+      <div class="frame event">
+        <img src="assets/img/synapse.jpg" alt="The Synapse festival mega-show" loading="lazy" onerror="this.parentNode.classList.add('empty');this.remove()">
+        <div class="event-fallback" aria-hidden="true"><strong>12,000+</strong><span>in the crowd</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── 06 Contact ───────────── -->
+<section id="contact" class="sec contact" data-title="Contact" data-stage>
+  <header class="sec-head">
+    <span class="stage"><i class="dot"></i>06 · Serve</span>
+    <h2>If your data has a story it isn’t telling yet, <em>let’s talk.</em></h2>
+  </header>
+  <p class="contact-lede" data-p data-k="contact hire availability email reach roles open">I’m open to Data Engineering, Data Science, Data Analyst and AI roles in the UK. Email is the fastest way to reach me.</p>
+  <ul class="contact-links">
+    <li><a href="mailto:devammpatelstudy@gmail.com"><span>Email</span><b>devammpatelstudy@gmail.com</b></a></li>
+    <li><a href="https://www.linkedin.com/in/Devamm" target="_blank" rel="noopener"><span>LinkedIn</span><b>linkedin.com/in/Devamm</b></a></li>
+    <li><a href="https://github.com/DevammPatel" target="_blank" rel="noopener"><span>GitHub</span><b>github.com/DevammPatel</b></a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© <span id="year">2026</span> Devamm Patel · Leeds, UK</p>
+  <p>Hand-built with plain HTML, CSS and JavaScript. No framework, no trackers. The search and the live demo both run in your browser.</p>
+</footer>
+
+<!-- ───────────── Ask this page (in-browser retrieval) ───────────── -->
+<dialog class="ask" id="ask" aria-labelledby="ask-title">
+  <form method="dialog" class="ask-close"><button aria-label="Close">Esc</button></form>
+  <h2 id="ask-title">Ask this page</h2>
+  <p class="ask-sub">A small BM25 retriever over <span id="ask-n">0</span> passages of this site, running in your browser. No language model and no server. Like <a href="#work" data-close-ask>Sentinel-RAG</a>, it cites the exact passage, or says it has nothing.</p>
+  <div class="ask-input">
+    <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <input id="ask-q" type="search" autocomplete="off" spellcheck="false" placeholder="e.g. streaming experience with Kafka" aria-label="Your question">
+  </div>
+  <div class="ask-chips" id="ask-chips">
+    <button type="button">Kafka and Spark experience</button>
+    <button type="button">Published research</button>
+    <button type="button">How good is the RAG retrieval?</button>
+    <button type="button">Largest team led</button>
+    <button type="button">Certifications</button>
+  </div>
+  <p class="ask-meta" id="ask-meta" aria-live="polite"></p>
+  <ol class="ask-results" id="ask-results"></ol>
+</dialog>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
