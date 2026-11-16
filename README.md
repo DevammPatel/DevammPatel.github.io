@@ -10,9 +10,9 @@ Personal site of Devamm Patel. Plain HTML, CSS and JavaScript: no framework, no 
 | `assets/css/style.css` | Design. Colours are variables at the top of the file. |
 | `assets/js/app.js` | The role lens, the hero animation, the in-page search and the live stream demo. |
 | `assets/img/` | Photos. See `assets/img/README.md` for the file names to use. |
-| `assets/resume.pdf` | The public one-page résumé (no phone number). Built from `resume/resume.html`. |
-| `resume/resume.html` | Résumé source. Edit the text here. |
-| `resume/build.sh` | Rebuilds the résumé PDF with headless Chrome and checks it is still one page. |
+| `assets/resume.pdf` | The public one-page resume (no phone number). Built from `resume/resume.html`. |
+| `resume/resume.html` | Resume source. Edit the text here. |
+| `resume/build.sh` | Rebuilds the resume PDF with headless Chrome and checks it is still one page. |
 | `404.html`, `robots.txt`, `sitemap.xml` | Not-found page and search-engine files. |
 
 ## The four things that are not on a typical portfolio
@@ -28,7 +28,7 @@ Personal site of Devamm Patel. Plain HTML, CSS and JavaScript: no framework, no 
 - An element takes part in the role lens when it has `data-lens="de ds da ai"` (any subset).
 - To add a project, copy one `<article class="project">` block in `index.html`.
 
-## Updating the résumé
+## Updating the resume
 
 Edit `resume/resume.html`, then:
 

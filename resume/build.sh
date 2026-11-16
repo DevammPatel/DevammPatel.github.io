@@ -1,5 +1,5 @@
 #!/bin/bash
-# Rebuild the résumé PDFs from resume/resume.html with headless Chrome.
+# Rebuild the resume PDFs from resume/resume.html with headless Chrome.
 #
 #   ./resume/build.sh                      -> assets/resume.pdf (public, no phone number)
 #   ./resume/build.sh "+44 0000 000000"    -> also resume/private/Devamm_Patel_Resume.pdf
@@ -21,7 +21,7 @@ except ImportError:
 n = len(PdfReader(sys.argv[1]).pages)
 print(f"wrote {sys.argv[1]} ({n} page{'s' if n != 1 else ''})")
 if n != 1:
-    sys.exit("ERROR: the résumé no longer fits on one page. Shorten the text in resume/resume.html and rebuild.")
+    sys.exit("ERROR: the resume no longer fits on one page. Shorten the text in resume/resume.html and rebuild.")
 PY
 }
 
